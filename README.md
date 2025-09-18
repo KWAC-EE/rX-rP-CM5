@@ -1,6 +1,10 @@
 ## rX-rP-CM5 ##
 **Radxa-rPi CM5 Compatibility Layer**
 <img width="1277" height="817" alt="image" src="https://github.com/user-attachments/assets/e7e88d8d-1e01-4521-aa2e-1cee008cc56a" />
+<img width="576" height="459" alt="image" src="https://github.com/user-attachments/assets/71c335b8-dbb9-4639-abd0-45d3e0e043ce" />
+<img width="586" height="445" alt="image" src="https://github.com/user-attachments/assets/657afb85-8a24-47da-8f97-7170724a912b" />
+
+
 
 The Radxa and RaspberryPi CM5s have much in common, but the pinout between them differs. Functionally, the Radxa's RK3588 outperforms Broadcom's BCM2712 in most benchmarks (at least those i'm interested in):
 [Benchmarks seen here](https://gadgetversus.com/processor/rockchip-rk3588s-vs-broadcom-bcm2712/)
