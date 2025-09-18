@@ -1,8 +1,8 @@
 ## rX-rP-CM5 ##
 **Radxa-rPi CM5 Compatibility Layer**
 <img width="1277" height="817" alt="image" src="https://github.com/user-attachments/assets/e7e88d8d-1e01-4521-aa2e-1cee008cc56a" />
-<img width="576" height="459" alt="image" src="https://github.com/user-attachments/assets/71c335b8-dbb9-4639-abd0-45d3e0e043ce" />
-<img width="586" height="445" alt="image" src="https://github.com/user-attachments/assets/657afb85-8a24-47da-8f97-7170724a912b" />
+<img width="290" height="225" alt="image" src="https://github.com/user-attachments/assets/71c335b8-dbb9-4639-abd0-45d3e0e043ce" />
+<img width="290" height="225" alt="image" src="https://github.com/user-attachments/assets/657afb85-8a24-47da-8f97-7170724a912b" />
 
 
 
