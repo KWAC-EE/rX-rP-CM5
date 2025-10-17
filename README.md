@@ -1,8 +1,7 @@
 ## rX-rP-CM5 ##
 **Radxa-rPi CM5 Compatibility Layer**
 <img width="1277" height="817" alt="image" src="https://github.com/user-attachments/assets/e7e88d8d-1e01-4521-aa2e-1cee008cc56a" />
-<img width="290" height="225" alt="image" src="https://github.com/user-attachments/assets/71c335b8-dbb9-4639-abd0-45d3e0e043ce" />
-<img width="290" height="225" alt="image" src="https://github.com/user-attachments/assets/657afb85-8a24-47da-8f97-7170724a912b" />
+<img width="910" height="673" alt="image" src="https://github.com/user-attachments/assets/33ca84d3-a3df-4f46-88da-841b85d603df" />
 
 
 
@@ -14,8 +13,6 @@ Native GPU video encode and decode makes the Radxa far more ideal to use as the 
 Physically, the Radxa CM5 is more compatible with rPi CM4 carriers than it is with those built for the rPiCM5.
 The CM4 wasn't received as enthusatically by developers as the CM5, so more custom carriers are being built to take advantage of the added USB3 functionality.
 For that reason, i designed an adapter to transpose the USB3 lanes from the auxilary mezzanine connector on the Radxa to the corresponding pinout on the RaspberryPi variant.
-
-As of 09/18/2025, I haven't been able to perform a flash on a functional Radxa CM5 to test my present design. The single unit i had bought was damaged in a way I am unable to repair, so I havent been able to test this design en vivo. Updates will be included as testing becomes possible.
 
 # Project design files
 PCBAs are designed in Altium 22 & 25. This is a paid software platform for professionals, and viewer licenses can be requested from the developers.
