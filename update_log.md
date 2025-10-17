@@ -6,3 +6,8 @@ The primary USB3 lane from the auxilary port is transposed to the USB3-1 channel
 The USB-C channel, however, doesn't appear to be behaving correctly, at least not on my current OS & hardware.
 Similarly, the USB2 lane that is transposed to the OTG pads doesn't appear to initialize the downstream hub.
 I'll continue testing by using a real CM5 IO board from raspberry pi soon.
+
+**<11:30pm>**
+ok, I know what I did now. flipped the polarity between the otg & USB-C d+/- nets. dislexia strikes again...
+
+you know what they say: third rev's the charm. dammit....
