@@ -1,3 +1,5 @@
+11/17/2025 - X3 samples are in. USB2 and USB3-1 channels work as intended, and the onboard USB-C(2.0) port allows flashing of the module; USB3-0, which is derived from the Type-C on header J3, will not enumerate connected devices through OTG/Host mode. May be from I2C port controller, still debugging
+
 ## rX-rP-CM5 ##
 **Radxa-rPi CM5 Compatibility Layer**
 <img width="1277" height="817" alt="image" src="https://github.com/user-attachments/assets/e7e88d8d-1e01-4521-aa2e-1cee008cc56a" />
