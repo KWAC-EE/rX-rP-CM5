@@ -1,3 +1,6 @@
+2/20/2026 - X4 design is done. giving up on using the OTG port to drive a separate USB3 channel, and instead decided to split the known working USB3 channel with a hub. Will this reduce overall bandwidth? Yes, but for my application, i doubt it will be noticable.
+I'll order samples when i place another order for other parts.
+
 11/17/2025 - X3 samples are in. USB2 and USB3-1 channels work as intended, and the onboard USB-C(2.0) port allows flashing of the module; USB3-0, which is derived from the Type-C on header J3, will not enumerate connected devices through OTG/Host mode. May be from I2C port controller, still debugging
 
 ## rX-rP-CM5 ##
