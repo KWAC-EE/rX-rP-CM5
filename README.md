@@ -1,3 +1,5 @@
+3/27/2025 - Shouldn't have given up on X3 so quickly... Did a bit more experimenting. Lo and Behold, i needed to depop the FUSB chip completely, enter the Radxa OS configuration utility and manually set the OTG port to use only Host mode, and Tah-dah, it works exactly as intended. which is good, because there seems to be some interference caused by the hub on the X4 version that prevents the flashing utility from conntecting to the Emmc. So if you were planning on using any version of this design, i recommend starting from X3, removing the FUSB U1 component, and configuring it within the device tree.
+
 2/20/2026 - X4 design is done. giving up on using the OTG port to drive a separate USB3 channel, and instead decided to split the known working USB3 channel with a hub. Will this reduce overall bandwidth? Yes, but for my application, i doubt it will be noticable.
 I'll order samples when i place another order for other parts.
 
