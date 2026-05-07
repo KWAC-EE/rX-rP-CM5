@@ -1,16 +1,10 @@
-3/27/2025 - Shouldn't have given up on X3 so quickly... Did a bit more experimenting. Lo and Behold, i needed to depop the FUSB chip completely, enter the Radxa OS configuration utility and manually set the OTG port to use only Host mode, and Tah-dah, it works exactly as intended. which is good, because there seems to be some interference caused by the hub on the X4 version that prevents the flashing utility from conntecting to the Emmc. So if you were planning on using any version of this design, i recommend starting from X3, removing the FUSB U1 component, and configuring it within the device tree.
-
-2/20/2026 - X4 design is done. giving up on using the OTG port to drive a separate USB3 channel, and instead decided to split the known working USB3 channel with a hub. Will this reduce overall bandwidth? Yes, but for my application, i doubt it will be noticable.
-I'll order samples when i place another order for other parts.
-
-11/17/2025 - X3 samples are in. USB2 and USB3-1 channels work as intended, and the onboard USB-C(2.0) port allows flashing of the module; USB3-0, which is derived from the Type-C on header J3, will not enumerate connected devices through OTG/Host mode. May be from I2C port controller, still debugging
-
 ## rX-rP-CM5 ##
 **Radxa-rPi CM5 Compatibility Layer**
 <img width="1277" height="817" alt="image" src="https://github.com/user-attachments/assets/e7e88d8d-1e01-4521-aa2e-1cee008cc56a" />
-<img width="910" height="673" alt="image" src="https://github.com/user-attachments/assets/33ca84d3-a3df-4f46-88da-841b85d603df" />
 
-
+<img width="838" height="637" alt="image" src="https://github.com/user-attachments/assets/7540876a-39a2-4b2c-8a2e-01b21aaa6973" />
+<img width="841" height="640" alt="image" src="https://github.com/user-attachments/assets/11dc4367-985a-4f26-950f-d9e82661889b" />
+<img width="846" height="659" alt="image" src="https://github.com/user-attachments/assets/5a183cbc-58c0-4f35-938b-3c71a6781407" />
 
 The Radxa and RaspberryPi CM5s have much in common, but the pinout between them differs. Functionally, the Radxa's RK3588 outperforms Broadcom's BCM2712 in most benchmarks (at least those i'm interested in):
 [Benchmarks seen here](https://gadgetversus.com/processor/rockchip-rk3588s-vs-broadcom-bcm2712/)
@@ -20,6 +14,8 @@ Native GPU video encode and decode makes the Radxa far more ideal to use as the 
 Physically, the Radxa CM5 is more compatible with rPi CM4 carriers than it is with those built for the rPiCM5.
 The CM4 wasn't received as enthusatically by developers as the CM5, so more custom carriers are being built to take advantage of the added USB3 functionality.
 For that reason, i designed an adapter to transpose the USB3 lanes from the auxilary mezzanine connector on the Radxa to the corresponding pinout on the RaspberryPi variant.
+
+This design includes automatic switching via MUX so the transposed lanes are allocated properly during flashing vs normal operation. CC resistors & VBus_Enable pull-ups have been added for designs which use those pins.
 
 # Project design files
 PCBAs are designed in Altium 22 & 25. This is a paid software platform for professionals, and viewer licenses can be requested from the developers.
